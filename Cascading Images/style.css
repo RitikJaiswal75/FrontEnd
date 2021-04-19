@@ -1,0 +1,13 @@
+.flex{
+    display: flex;
+}
+img{
+    width: 10vw;
+    height:60vh;
+    border-radius:1.7rem;
+    margin: auto 1em;
+    transition: all 0.3s ease-in-out;
+}
+.active{
+    width: 48vw;
+}
