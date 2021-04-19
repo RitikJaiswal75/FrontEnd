@@ -1,0 +1,145 @@
+body{
+    font-family: Open Sans;
+    font-style: normal;
+}
+
+h2{
+    color: #FF7D45;
+    text-align: center;
+}
+
+h4{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 131%;
+    padding-right: 4rem;
+    text-align: right;
+}
+
+p{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 131%;
+}
+
+button{
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 24px;
+    width: 288px;
+    height: 54px;
+    margin-bottom: 2rem;
+    background: linear-gradient(268.49deg, #FF7D45 -13.17%, rgba(255, 77, 0, 0.8) 124.58%);
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: 6rem;
+}
+
+footer{
+    text-align: center;
+}
+
+hr{
+    color: #FF7D45;
+    border-bottom:.15em solid #FF7D45;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    visibility: hidden;
+}
+
+.ipVal{
+    border: .1em solid #FF7D45;
+    border-radius: 2em;
+    font-size: 8px;
+    padding: .5em;
+    color: #FF7D45;
+}
+
+input{
+    width: 70%;
+    -webkit-appearance: none;
+    background: #FF7D45;
+    border-radius: 4em;
+    height: .2em;
+    cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 1em;
+    width: 1em;
+    border-radius: 50%;
+    border:1px solid #FF7D45;
+    background: white;
+}
+  
+.oneLine{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.oneLine input{
+    margin-right: 4rem;
+}
+
+.calculator{   
+    margin: 0% 10%;
+    border: 5px solid #FF7D45;
+}
+
+.psub{
+    padding: 0 3rem;
+}
+
+.headings{
+    background: #FF7D45;
+    text-align: center;
+}
+.wtext{
+    color: white;
+    padding: 1rem 0;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 131%;
+}
+
+@media (max-width: 800px){
+    .oneLine{
+        display: block;
+    }
+    input{
+        width: 100%;
+    }
+    .oneLine p{
+        text-align: right;
+    }
+    button{
+        margin: 0 auto 2em auto;
+        width: 156px;
+        height: 37px;
+    }
+    hr{
+        visibility: visible;
+    }
+    footer{
+        visibility: collapse;
+    }
+    h4{
+        color: #FF7D45;
+    }
+    .calculator{
+        margin: 0 5%;
+    }
+}
+
+@media(max-width:580px){
+    h4{
+        text-align: center;
+    }
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="profit">
+        <div class="headings">
+          <h3 class="wtext">PROFIT ON DEVICE SALES</h3>
+        </div>
+        <div class="psub">
+          <p>No. of Devices:</p>
+          <span id="ipVal1" class="ipVal"></span>
+          <div class="oneLine">
+            <input type="range" name="deviceRange" class="range" id="deviceRange" min="10" max="100" step="10"/>
+            <p>
+              <u>&nbsp;&nbsp;<span id="pDeviceNo"></span>&nbsp;&nbsp;</u>/month
+            </p>
+          </div>
+          <p>Margin Per Device(Approx):</p>
+          <span id="ipVal2" class="ipVal"></span>
+          <div class="oneLine">
+            <input type="range" class="range" name="MarginDeviceRange" id="MarginDeviceRange" min="500" max="5000" step="500"/>
+            <p>
+              <u>&nbsp;Rs.<span id="pMarginDevice"></span>&nbsp;</u>/device
+            </p>
+          </div>
+          <br />
+          <h4 >
+            Total profit on Device Sales: Rs. <span id="salesProfit"></span>
+          </h4>
+        </div>
+      </div>
+      <div class="renewal">
+        <div class="headings">
+          <h3 class="wtext">RENEWAL CHARGES</h3>
+        </div>
+        <div class="psub">
+          <p>Software Renewal Charges(Company)= 500 + Tax = 590/Year.</p>
+          <p>Margin:</p>
+          <span id="ipVal3" class="ipVal"></span>
+          <div class="oneLine">
+            <input type="range" name="MarginRange" class="range" id="MarginRange" min="600" max="1800" step="300"/>
+            <p>
+              <u>&nbsp;&nbsp;<span id="rMargin"></span>&nbsp;&nbsp;</u>/device
+            </p>
+          </div>
+          <p>Total no of devices:</p>
+          <span id="ipVal4" class="ipVal"></span>
+          <div class="oneLine">
+            <input type="range" name="TotalRange" id="TotalRange" class="range" min="100" max="1000" step="100" oninput="amount.value=rangeInput.value"/>
+            <p>
+              <u
+                >&nbsp;&nbsp;&nbsp;<span id="rDeviceNo"></span
+                >&nbsp;&nbsp;&nbsp;</u
+              >&nbsp;&nbsp;&nbsp;&nbsp;
+            </p>
+          </div>
+          <br />
+          <h4>
+            Total profit on Device Sales: Rs. <span id="rsalesProfit"></span>
+          </h4>
+          <br />
+          <br />
+          
+        </div>
+        <h2>
+          <hr>
+          Estimated total profit: Rs. <span id="eTotalProfit"></span>/Year
+          <hr>
+        </h2>
+        <br />
+        <br />
+        <p><button>CTA</button></p>
+      </div>
+      <footer>*fxhkdjfbvkjxdfbnvkjxdfbvkdjf</footer>
+      
+    </div>
+    <script src="calci.js"></script>
+  </body>
+</html>
