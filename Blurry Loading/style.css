@@ -1,0 +1,37 @@
+html{
+    overflow: hidden;
+    transition: 0.7s ease-in;
+}
+
+body{
+    margin: 0;
+}
+
+.main{
+    background-image: url("https://images.unsplash.com/photo-1511306162219-1c5a469ab86c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8YmxhY2tzbWl0aHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+h1{
+    color: white;
+    position:absolute;
+    margin: 45vh 47vw;
+    font-size: 60px;
+    font-weight: lighter;
+}
+
+.loader{
+    background-color: white;
+    opacity: 50%;
+    width: 100vw;
+    height: 100vw;
+}
+
+.hide{
+    visibility: hidden;
+}
